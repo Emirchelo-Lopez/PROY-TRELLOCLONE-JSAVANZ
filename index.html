@@ -1,13 +1,138 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trello Redesign Dashboard</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <!-- Background decorations -->
+    <div class="bg-decoration"></div>
+    <div class="bg-decoration"></div>
+    <div class="bg-decoration"></div>
+    <div class="bg-decoration"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <h1>Trello</h1>
+            <span>Redesign</span>
+        </div>
+        <nav class="nav-controls">
+            <input type="text" class="search-box" placeholder="Search...">
+            <button class="nav-btn">Boards</button>
+            <button class="nav-btn">Teams</button>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main class="main-content">
+        <!-- Project header -->
+        <div class="project-header">
+            <div class="project-info">
+                <h2>Android team</h2>
+                <div class="team-avatars">
+                    <div class="avatar">A</div>
+                    <div class="avatar">B</div>
+                    <div class="avatar">C</div>
+                    <div class="avatar">D</div>
+                </div>
+            </div>
+            <div class="project-controls">
+                <button class="control-btn">All Lists</button>
+                <button class="control-btn">Cards</button>
+                <button class="control-btn">Team</button>
+            </div>
+        </div>
+
+        <!-- Kanban board -->
+        <div class="kanban-board">
+            <!-- To do column -->
+            <div class="column to-do">
+                <div class="column-header">
+                    <span class="column-title">To do</span>
+                    <span class="column-count">2</span>
+                </div>
+                <div class="card">
+                    <div class="card-title">Install Python Backend</div>
+                    <div class="card-meta">
+                        <div class="card-stats">
+                            <span>📅 Nov 1</span>
+                            <span>💬 2</span>
+                            <span>📎 1</span>
+                        </div>
+                        <div class="card-assignees">
+                            <div class="avatar">J</div>
+                            <div class="avatar">M</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">Audio log in integration</div>
+                    <div class="card-meta">
+                        <div class="card-stats">
+                            <span>📅 Nov 3</span>
+                            <span>💬 0</span>
+                            <span>📎 1</span>
+                        </div>
+                        <div class="card-assignees">
+                            <div class="avatar">K</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-card">+ Add a card</div>
+            </div>
+
+            <!-- Pending column -->
+            <div class="column pending">
+                <div class="column-header">
+                    <span class="column-title">Pending</span>
+                    <span class="column-count">1</span>
+                </div>
+                <div class="card">
+                    <div class="card-title">Over the air updates</div>
+                    <div class="card-meta">
+                        <div class="card-stats">
+                            <span>📅 Nov 5</span>
+                            <span>💬 3</span>
+                            <span>📎 2</span>
+                        </div>
+                        <div class="card-assignees">
+                            <div class="avatar">L</div>
+                            <div class="avatar">N</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-card">+ Add a card</div>
+            </div>
+
+            <!-- Done column -->
+            <div class="column done">
+                <div class="column-header">
+                    <span class="column-title">Done</span>
+                    <span class="column-count">1</span>
+                </div>
+                <div class="card">
+                    <div class="card-title">Android team branding</div>
+                    <div class="card-meta">
+                        <div class="card-stats">
+                            <span>📅 Oct 28</span>
+                            <span>💬 4</span>
+                            <span>📎 3</span>
+                        </div>
+                        <div class="card-assignees">
+                            <div class="avatar">P</div>
+                            <div class="avatar">Q</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-card">+ Add a card</div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Add button -->
+    <button class="add-btn">+</button>
+</body>
 </html>
