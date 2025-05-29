@@ -1,6 +1,7 @@
 {
   "cards": [
     {
+      "id": "123",
       "title": "Install Python Backend",
       "description": "Set up a Python backend for the project using Flask or Django.",
       "status": "to-do",
@@ -39,6 +40,15 @@
       "priority": "low",
       "date": "2023-11-20",
       "responsible": null
+    },
+    {
+      "title": "Design creation in Figma",
+      "description": "Set up a design system.",
+      "status": "to-do",
+      "priority": "high",
+      "date": "2023-11-01",
+      "responsible": "Alice",
+      "id": "10"
     }
   ]
 }
