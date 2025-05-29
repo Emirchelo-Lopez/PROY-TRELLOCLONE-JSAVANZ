@@ -1,0 +1,44 @@
+{
+  "cards": [
+    {
+      "title": "Install Python Backend",
+      "description": "Set up a Python backend for the project using Flask or Django.",
+      "status": "to-do",
+      "priority": "high",
+      "date": "2023-11-01",
+      "responsible": "Alice"
+    },
+    {
+      "title": "Create React Frontend",
+      "description": "Develop a React frontend that communicates with the Python backend.",
+      "status": "in-progress",
+      "priority": "medium",
+      "date": "2023-11-05",
+      "responsible": "Bob"
+    },
+    {
+      "title": "Set Up Database",
+      "description": "Configure PostgreSQL database for the application.",
+      "status": "to-do",
+      "priority": "high",
+      "date": "2023-11-10",
+      "responsible": "Charlie"
+    },
+    {
+      "title": "Implement User Authentication",
+      "description": "Add user authentication using JWT tokens.",
+      "status": "to-do",
+      "priority": "high",
+      "date": "2023-11-15",
+      "responsible": "Alice"
+    },
+    {
+      "title": "Deploy Application to Heroku",
+      "description": "Deploy the application to Heroku for public access.",
+      "status": "to-do",
+      "priority": "low",
+      "date": "2023-11-20",
+      "responsible": null
+    }
+  ]
+}
