@@ -48,8 +48,9 @@
             <span class="column-title">To do</span>
             <span class="column-count">2</span>
           </div>
-          <div class="cards-container">
-            <div class="card">
+          <div id="add-card" class="add-card">+ Add a card</div>
+          <div id="todo-list" class="cards-container">
+            <!-- <div class="card">
               <div class="card-header">
                 <div class="card-title">Install Python Backend</div>
                 <span>🗑️</span>
@@ -76,20 +77,19 @@
                   <div class="avatar">K</div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
-
-          <div class="add-card">+ Add a card</div>
         </div>
 
         <!-- In Progress column -->
-        <div class="column pending">
+        <div class="column">
           <div class="column-header">
             <span class="column-title">In Progress</span>
             <span class="column-count">1</span>
           </div>
-          <div class="cards-container">
-            <div class="card">
+          <div class="add-card">+ Add a card</div>
+          <div id="in-progress-list" class="cards-container">
+            <!-- <div class="card">
               <div class="card-title">Over the air updates</div>
               <div class="card-meta">
                 <div class="card-stats">
@@ -101,9 +101,8 @@
                   <div class="avatar">N</div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
-          <div class="add-card">+ Add a card</div>
         </div>
 
         <!-- Done column -->
@@ -112,8 +111,9 @@
             <span class="column-title">Done</span>
             <span class="column-count">1</span>
           </div>
-          <div class="cards-container">
-            <div class="card">
+          <div class="add-card">+ Add a card</div>
+          <div id="done-list" class="cards-container">
+            <!-- <div class="card">
               <div class="card-title">Android team branding</div>
               <div class="card-meta">
                 <div class="card-stats">
@@ -125,12 +125,32 @@
                   <div class="avatar">Q</div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
-          <div class="add-card">+ Add a card</div>
         </div>
       </div>
     </main>
-    <script src="./src/main.js"></script>
+    <section class="modal_form">
+      <form id="add-card-form">
+        <input name="title" placeholder="Add title" />
+        <textarea
+          name="description"
+          placeholder="Please add a description"
+        ></textarea>
+        <input type="date" name="due-date" placeholder="Due date" />
+        <select name="priority">
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+        </select>
+        <select name="status">
+          <option value="to-do">To-do</option>
+          <option value="in-progress">In Progress</option>
+          <option value="done">Done</option>
+        </select>
+        <button type="submit">Add</button>
+      </form>
+    </section>
+    <script src="./src/main.js" type="module"></script>
   </body>
 </html>

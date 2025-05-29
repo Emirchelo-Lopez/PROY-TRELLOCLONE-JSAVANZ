@@ -1,54 +1,69 @@
 {
   "cards": [
     {
-      "id": "123",
+      "id": "1",
       "title": "Install Python Backend",
       "description": "Set up a Python backend for the project using Flask or Django.",
       "status": "to-do",
       "priority": "high",
-      "date": "2023-11-01",
+      "date": "01-11-2023",
       "responsible": "Alice"
     },
     {
+      "id": "2",
       "title": "Create React Frontend",
       "description": "Develop a React frontend that communicates with the Python backend.",
       "status": "in-progress",
-      "priority": "medium",
-      "date": "2023-11-05",
-      "responsible": "Bob"
+      "priority": "Medium",
+      "date": "29-05-2025",
+      "responsible": null,
+      "due-date": ""
     },
     {
+      "id": "3",
       "title": "Set Up Database",
       "description": "Configure PostgreSQL database for the application.",
       "status": "to-do",
       "priority": "high",
-      "date": "2023-11-10",
+      "date": "10-11-2023",
       "responsible": "Charlie"
     },
     {
+      "id": "4",
       "title": "Implement User Authentication",
       "description": "Add user authentication using JWT tokens.",
       "status": "to-do",
       "priority": "high",
-      "date": "2023-11-15",
+      "date": "15-11-2023",
       "responsible": "Alice"
     },
     {
+      "id": "5",
       "title": "Deploy Application to Heroku",
       "description": "Deploy the application to Heroku for public access.",
       "status": "to-do",
       "priority": "low",
-      "date": "2023-11-20",
+      "date": "20-11-2023",
       "responsible": null
     },
     {
+      "id": "6",
       "title": "Design creation in Figma",
       "description": "Set up a design system.",
       "status": "to-do",
       "priority": "high",
-      "date": "2023-11-01",
-      "responsible": "Alice",
-      "id": "10"
+      "date": "01-11-2023",
+      "responsible": "Alice"
+    },
+    {
+      "id": "1191e685-095c-4e77-8dba-41df665e641a",
+      "title": "Keep rollin rollin",
+      "description": "Jackpot!",
+      "due-date": "2025-05-14",
+      "priority": "High",
+      "status": "done",
+      "date": "13-05-2025",
+      "responsible": null
     }
   ]
 }
