@@ -5,9 +5,10 @@
       "title": "Install Python Backend",
       "description": "Set up a Python backend for the project using Flask or Django.",
       "status": "to-do",
-      "priority": "high",
-      "date": "01-11-2023",
-      "responsible": "Alice"
+      "priority": "High",
+      "date": "29-05-2025",
+      "responsible": null,
+      "due-date": ""
     },
     {
       "id": "2",
@@ -24,45 +25,59 @@
       "title": "Set Up Database",
       "description": "Configure PostgreSQL database for the application.",
       "status": "to-do",
-      "priority": "high",
-      "date": "10-11-2023",
-      "responsible": "Charlie"
+      "priority": "High",
+      "date": "29-05-2025",
+      "responsible": null,
+      "due-date": ""
     },
     {
       "id": "4",
       "title": "Implement User Authentication",
       "description": "Add user authentication using JWT tokens.",
       "status": "to-do",
-      "priority": "high",
-      "date": "15-11-2023",
-      "responsible": "Alice"
+      "priority": "High",
+      "date": "29-05-2025",
+      "responsible": null,
+      "due-date": ""
     },
     {
       "id": "5",
       "title": "Deploy Application to Heroku",
       "description": "Deploy the application to Heroku for public access.",
       "status": "to-do",
-      "priority": "low",
-      "date": "20-11-2023",
-      "responsible": null
+      "priority": "Low",
+      "date": "29-05-2025",
+      "responsible": null,
+      "due-date": ""
     },
     {
       "id": "6",
-      "title": "Design creation in Figma",
+      "title": "Ddsfsdfsad",
       "description": "Set up a design system.",
-      "status": "to-do",
-      "priority": "high",
-      "date": "01-11-2023",
-      "responsible": "Alice"
+      "status": "in-progress",
+      "priority": "High",
+      "date": "29-05-2025",
+      "responsible": null,
+      "due-date": ""
     },
     {
       "id": "1191e685-095c-4e77-8dba-41df665e641a",
-      "title": "Keep rollin rollin",
+      "title": "Task",
       "description": "Jackpot!",
       "due-date": "2025-05-14",
       "priority": "High",
       "status": "done",
       "date": "13-05-2025",
+      "responsible": null
+    },
+    {
+      "id": "47fbe48a-c735-4f5c-a92b-cb5f4c29dd07",
+      "title": "Finish DEVF Project",
+      "description": "Finish project",
+      "due-date": "2025-05-29",
+      "priority": "High",
+      "status": "done",
+      "date": "28-05-2025",
       "responsible": null
     }
   ]

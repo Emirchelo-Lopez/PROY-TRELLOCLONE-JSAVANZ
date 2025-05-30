@@ -10,7 +10,7 @@ modalForm.style.display = "none";
 
 // Zod schema for later validation
 const schema = z.object({
-  title: z.string().min(1, "Name is required"),
+  title: z.string().min(1, "Title is required"),
   description: z.string(),
   id: z.string().min(1),
   status: z.string().min(1, "Status is required"),
@@ -37,7 +37,7 @@ async function fetchCards() {
 
 // POST a card
 // Helper to format date to DD-MM-YYYY
-function formatDateToDDMMYYYY(dateStr) {
+function formatDateMX(dateStr) {
   const date = dateStr ? new Date(dateStr) : new Date();
   const day = String(date.getDate()).padStart(2, "0");
   const month = String(date.getMonth() + 1).padStart(2, "0");
@@ -48,7 +48,7 @@ function formatDateToDDMMYYYY(dateStr) {
 // POST METHOD
 async function postCard(card) {
   const uuid = crypto.randomUUID();
-  const formattedDate = formatDateToDDMMYYYY(card["due-date"]);
+  const formattedDate = formatDateMX(card["due-date"]);
   const formattedPriority =
     card.priority && card.priority.length > 0
       ? card.priority.charAt(0).toUpperCase() +
@@ -69,7 +69,7 @@ async function postCard(card) {
 
     if (!isValid.success) {
       console.log(isValid.error);
-      alert("object is not valid");
+      alert("Card is not valid");
       return;
     }
 
@@ -113,7 +113,7 @@ async function deleteCard(id) {
 // PATCH METHOD
 async function updateCard(id, card) {
   // Format date and priority as in postCard
-  const formattedDate = formatDateToDDMMYYYY(card["due-date"]);
+  const formattedDate = formatDateMX(card["due-date"]);
   const formattedPriority =
     card.priority && card.priority.length > 0
       ? card.priority.charAt(0).toUpperCase() + card.priority.slice(1).toLowerCase()
@@ -171,10 +171,10 @@ async function renderCards() {
   inProgressCont.innerHTML = inProgressList;
   doneCont.innerHTML = doneList;
 
-  const deleteBtn = document.querySelectorAll("#delete-card");
-  for (const card_d of deleteBtn) {
-    card_d?.addEventListener("click", async (event) => {
-      const cardID = card_d.getAttribute("data");
+  const deleteBtns = document.querySelectorAll("#delete-card");
+  for (const deleteBtn of deleteBtns) {
+    deleteBtn?.addEventListener("click", async (event) => {
+      const cardID = deleteBtn.getAttribute("data");
       console.log(cardID);
       await deleteCard(cardID);
     });
